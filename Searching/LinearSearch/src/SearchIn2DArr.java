@@ -23,7 +23,6 @@ public class SearchIn2DArr {
         }
         return ans;
     }
-
     static int Max(int[][] arr) {
         int max = Integer.MIN_VALUE;
         for (int[] box : arr) {
