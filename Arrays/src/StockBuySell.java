@@ -14,10 +14,20 @@ public class StockBuySell {
 
     static int Profit(int[] arr){
         int minPrice=arr[0];
+        //int max=0;
         for (int j : arr) {
             if (j < minPrice) {
                 minPrice = j;
             }
+            // you can try this method also
+            /*
+            else{
+                int profit=arr[j]-minPrice;
+                if(profit>max){
+                   max=profit;
+                  }
+                }
+            */
         }
         int priceIndex=0;
         for (int i = 0; i < arr.length; i++) {
@@ -31,7 +41,6 @@ public class StockBuySell {
                 max=arr[i];
             }
         }
-
         return max-minPrice;
     }
 }
