@@ -3,20 +3,52 @@ import java.util.Scanner;
 
 public class PermutationArr {
     public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
-        System.out.print("Enter the length of Array : ");
-        int n=sc.nextInt();
-        int[] arr=new int[n];
-        for(int i=0;i<n;i++){
-            arr[i]=sc.nextInt();
-        }
-        System.out.println(Arrays.toString(buildArray(arr)));
+        int[] arr={0,2,1,5,3,4};
+        System.out.println(Arrays.toString(PerArr(arr)));
     }
-    static int[] buildArray(int[] num) {
-        int[] ans=new int[num.length];
-        for(int i=0;i<num.length;i++){
-            ans[i]=num[num[i]];
+    static int[] PerArr(int[] arr){
+        int n =arr.length;
+        int[] ans=new int[n];
+        for (int i = 0; i < n; i++) {
+            ans[i]=arr[arr[i]];
         }
         return ans;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

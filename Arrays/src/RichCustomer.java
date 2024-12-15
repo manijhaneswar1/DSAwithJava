@@ -1,21 +1,10 @@
 import java.util.Scanner;
 public class RichCustomer{
     public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
-        System.out.print("enter m value : ");
-        int m=sc.nextInt();
-        System.out.print("enter n value : ");
-        int n=sc.nextInt();
-        System.out.print("enter Arr value's : ");
-        int[][] arr=new int[m][n];
-        for(int i=0;i<m;i++){
-            for(int j=0;j<n;j++){
-                arr[i][j]=sc.nextInt();
-            }
-        }
+       int[][] arr={{1,5},{3,5},{7,3}};
         System.out.println("Richest Customer with Wealth of : " + maximumWealth(arr));
     }
-    static public int maximumWealth(int[][] accounts) {
+   /* static public int maximumWealth(int[][] accounts) {
         int max=0;
         for (int[] account : accounts) {
             int sum = 0;
@@ -25,5 +14,25 @@ public class RichCustomer{
             max = Math.max(max, sum);
         }
         return max;
+    }*/
+    static int maximumWealth(int[][] arr){
+        int max=0;
+        int sum=0;
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                sum=sum+arr[i][j];
+            }
+            if(sum>max){
+                max=sum;
+                sum=0;
+            }
+        }
+        return max;
     }
+
+
+
+
+
+
 }
