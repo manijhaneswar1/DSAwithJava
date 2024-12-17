@@ -1,6 +1,6 @@
 public class PeakIndexMountain {
     public static void main(String[] args) {
-        int[] arr={1,2};
+        int[] arr={3,4,5,1,2};
         System.out.println(findPeakElement(arr));
     }
     static int findPeakElement(int[] arr) {
@@ -14,6 +14,6 @@ public class PeakIndexMountain {
                 s=mid+1;
             }
         }
-        return s;
+        return e; //it is returning index 0f element in Arr // if you want element itself then // return arr[e];
     }
 }
