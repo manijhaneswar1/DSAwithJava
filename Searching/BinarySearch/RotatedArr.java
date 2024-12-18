@@ -36,7 +36,6 @@ public class RotatedArr {
         }
         return -1;
     }
-
     static int BinaryAss(int[] arr,int target,int start,int end){
         while (start <=end) {
             int mid=start + (end-start)/2;
@@ -52,4 +51,3 @@ public class RotatedArr {
         return -1;
     }
 }
-
