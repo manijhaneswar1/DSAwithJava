@@ -19,7 +19,7 @@ public class Demo {
                     swapped=true;
                 }
             }
-            if(swapped==false){
+            if(!swapped){
                 break;
             }
         }
