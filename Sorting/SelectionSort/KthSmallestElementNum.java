@@ -1,7 +1,8 @@
 public class KthSmallestElementNum {
     public static void main(String[] args) {
         int[] nums={1,4,32,14,123};
-        System.out.println(KthSmallest(nums,2));
+        int k=1;
+        System.out.println("The "+k+ " smallest Element in Array is : " +KthSmallest(nums,k));
     }
     static int KthSmallest(int[] nums,int k){
         for (int i = 0; i < nums.length; i++) {
