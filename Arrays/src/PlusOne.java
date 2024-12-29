@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class PlusOne {
     public static void main(String[] args) {
-        int[] arr={0,0,2,3,4};
+        int[] arr={9};
         System.out.println(Arrays.toString(plusOne(arr)));
     }
     static int[] plusOne(int[] arr){
@@ -14,8 +14,8 @@ public class PlusOne {
             }
             arr[i]=0;
         }
-        int[] ans=new int[n+1];
-        ans[0]=1;
-        return ans;
+        int[] newArr=new int[n+1];
+        newArr[0]=1;
+        return newArr;
     }
 }
