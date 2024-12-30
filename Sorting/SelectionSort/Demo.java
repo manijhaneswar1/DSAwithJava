@@ -7,7 +7,6 @@ public class Demo {
         System.out.println(Arrays.toString(arr));
     }
 
-
     static void select(int[] arr){
         for (int i = 0; i < arr.length; i++) {
             int last=arr.length-i-1;
@@ -15,7 +14,7 @@ public class Demo {
             swap(arr,last,maxIndex);
         }
     }
-    //ikada finding maxNumber index
+    //finding maxNumber index
      static int getMaxIndex(int[] arr, int start, int end) {
         int max=start;
         for (int i = start; i <= end; i++) {
@@ -25,7 +24,7 @@ public class Demo {
         }
         return max;
     }
-    //ikada swaping with last index and max Number index
+    //Swapping with last index and max Number index
     static void swap(int[] arr,int first,int second){
         int temp=arr[first];
         arr[first]=arr[second];
