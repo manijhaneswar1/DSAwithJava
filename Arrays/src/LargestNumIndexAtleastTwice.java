@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class LargestNumIndexAtleastTwice {
     public static void main(String[] args) {
-        int[] arr={1,2,3,4};
+        int[] arr={};
         System.out.println(ReturnIndexOfLarNum(arr));
     }
     static int ReturnIndexOfLarNum(int[] arr){
