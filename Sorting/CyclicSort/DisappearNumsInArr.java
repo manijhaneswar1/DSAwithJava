@@ -4,7 +4,7 @@ import java.util.List;
 
 public class DisappearNumsInArr {
     public static void main(String[] args) {
-        int[] arr = {4,5,3,2,2,3,7,8,6};
+        int[] arr = {1,2,2,3,4,6};
         System.out.println("Missing Numbers in Given " + Arrays.toString(arr) + " :- \n" +findDisappearedNumbers(arr));
     }
 
