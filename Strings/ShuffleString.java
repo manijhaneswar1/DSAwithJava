@@ -10,5 +10,6 @@ public class ShuffleString {
             ans[indices[i]]=s.charAt(i);
         }
         return String.valueOf(ans);
+        // or return new String(ans);
     }
 }
