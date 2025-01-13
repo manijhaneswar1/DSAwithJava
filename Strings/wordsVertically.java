@@ -28,9 +28,11 @@ public class wordsVertically {
                     word += ' ';
                 }
             }
+            // trim last ' ' empty part of word
             while(word.length()>0 && word.charAt(word.length()-1) == ' '){
                 word = word.substring(0,word.length()-1);
             }
+            // add to to our Arraylist is word is empty
             if(!word.isEmpty()){
                 ans.add(word);
             }
