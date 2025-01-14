@@ -1,40 +1,29 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class CamelCaseMatch {
     public static void main(String[] args) {
-        String[] arr={"FooBar","FooBarTest","FootBall","FrameBuffer","ForceFeedBack"};
-        String pat="FB";
-        System.out.println(camelMatch(arr,pat));
+        String[] queries = {"FooBar", "FooBarTest", "FootBall", "FrameBuffer", "ForceFeedBack"};
+        String pattern = "FB";
+        System.out.println(camelMatch(queries, pattern));
     }
-    static List<Boolean> camelMatch(String[] queries, String pattern) {
+
+    public static List<Boolean> camelMatch(String[] queries, String pattern) {
         List<Boolean> ans = new ArrayList<>();
-            for (String query : queries) {
-            ans.add(isMatch(query, pattern));
+
+        for (String query : queries) {
+            ans.add(matchesPattern(query, pattern));
         }
         return ans;
     }
-
-    static boolean isMatch(String query, String pattern) {
-        int queryLength = query.length();
-        int patternLength = pattern.length();
-        int i = 0, j = 0;
-
-        while (j < patternLength) {
-            while (i < queryLength && query.charAt(i) != pattern.charAt(j) && Character.isLowerCase(query.charAt(i))) {
+    private static boolean matchesPattern(String query, String pattern) {
+        int i = 0;
+        for (char ch : query.toCharArray()) {
+            if (i < pattern.length() && ch == pattern.charAt(i)) {
                 i++;
-            }
-            if (i == queryLength || query.charAt(i) != pattern.charAt(j)) {
+            } else if (Character.isUpperCase(ch)) {
                 return false;
             }
-            i++;
-            j++;
         }
-
-        while (i < queryLength && Character.isLowerCase(query.charAt(i))) {
-            i++;
-        }
-
-        return i == queryLength;
+        return i == pattern.length();
     }
 }
