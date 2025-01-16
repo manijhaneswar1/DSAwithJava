@@ -1,6 +1,6 @@
 public class smallLetterTarget {
     public static void main(String[] args) {
-       char[] letters={'a','b','c'};
+       char[] letters={'a','b','d','z'};
         char target='b';
         System.out.println(larThanTarget(letters,target));
     }
