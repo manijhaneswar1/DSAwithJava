@@ -4,6 +4,7 @@ public class HomogenousCountStr {
         System.out.println(countSubStr(str));
     }
     static int countSubStr(String s){
+        int mod=1_000_000_007;
         long totalCount=0;
         int tempCount=1;
         for (int i = 1; i < s.length(); i++) {
@@ -14,6 +15,6 @@ public class HomogenousCountStr {
             }
             totalCount += tempCount;
         }
-        return (int) (totalCount + 1  % (1000000007)) ;
+        return (int) (totalCount + 1  % mod) ;
     }
 }
