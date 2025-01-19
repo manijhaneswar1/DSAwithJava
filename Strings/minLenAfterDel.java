@@ -1,6 +1,6 @@
 public class minLenAfterDel {
     public static void main(String[] args) {
-        String s="cabacbac";
+        String s="cabaabac";
         System.out.println(minimumLength(s));
     }
     static int minimumLength(String s) {
