@@ -12,7 +12,7 @@ public class Reverse_String {
     static char[] RS(char[] str,int st,int e){
 
         // base condition
-        if(st >= e){
+        if(st > e || st == e){
             return str;
         }
 
