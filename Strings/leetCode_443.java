@@ -3,7 +3,7 @@ import java.util.Objects;
 
 public class leetCode_443 {
     public static void main(String[] args) {
-        String[] chars ={"a","b","b","b"};
+        String[] chars ={"a","b","b","b","c","d","f"};
         System.out.println(compress(chars));
     }
     static int compress(String[] chars) {

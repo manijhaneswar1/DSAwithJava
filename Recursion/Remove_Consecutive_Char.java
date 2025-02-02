@@ -7,6 +7,7 @@ public class Remove_Consecutive_Char {
     }
     // RECURSION SOLUTION
     static String recursive(String s,int n){
+        // base condition
         if(n >= s.length()-1) return s;
 
         // change condition to how to remove char
