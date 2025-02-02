@@ -3,6 +3,7 @@ public class Binary_Search {
         int[] arr={1,2,3,4,55,444,1000};
         int target=77;
         System.out.println(BS(arr,target,0,arr.length-1));
+        System.out.println("I LOVE YOU --- TAJ.....");
     }
     static int BS (int[] arr,int target ,int s,int e){
         if(s > e){
