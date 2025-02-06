@@ -9,7 +9,7 @@ public class GFG_Pattern_3 {
             System.out.println();
         }
     }
-}
+} // Incomplete ..need to add spaces to complete code
 
 /*
 
