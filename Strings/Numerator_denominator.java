@@ -2,8 +2,8 @@ import java.util.HashMap;
 
 public class Numerator_denominator {
     public static void main(String[] args) {
-        int numerator=4;
-        int denominator=333;
+        int numerator=3;
+        int denominator=9;
         System.out.println(fractionToDecimal(numerator,denominator));
     }
     static String fractionToDecimal(int numerator,int denominator){
@@ -18,6 +18,7 @@ public class Numerator_denominator {
         long rem = num % denom;
 
         res.append(num / denom);
+
         if(rem == 0) return res.toString();
 
         res.append(".");

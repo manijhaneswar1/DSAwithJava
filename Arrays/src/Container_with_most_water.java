@@ -1,7 +1,8 @@
 public class Container_with_most_water {
     public static void main(String[] args) {
-        int[] height={1,8,6,2,5,4,8,3,7};
+        int[] height={8,7,2,1};
         System.out.println(maxArea(height));
+        System.out.println(maxAreaOptimal(height));
     }
     static int maxArea(int[] height) {
         int n = height.length;
@@ -20,6 +21,21 @@ public class Container_with_most_water {
                 minus++;
             }
             if(tempMax > max) max = tempMax;
+        }
+        return max;
+    }
+    static int maxAreaOptimal(int[] arr){
+        int i = 0;
+        int j = arr.length-1;
+        int max = 0;
+        while(i < j){
+            int tempMax = Math.min(arr[i] , arr[j]) * (j - i);
+            max = Math.max(tempMax , max);
+            if(arr[i] < arr[j]){
+                i++;
+            }else{
+                j--;
+            }
         }
         return max;
     }
