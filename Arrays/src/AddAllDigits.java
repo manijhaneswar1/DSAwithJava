@@ -1,6 +1,6 @@
 public class AddAllDigits {
     public static void main(String[] args) {
-        int num=11;
+        int num=110;
         System.out.println(addDigits(num));
     }
     static int addDigits(int num) {
@@ -8,7 +8,7 @@ public class AddAllDigits {
             return num;
         }
         int sum=0;
-        while(sum>=0){
+        while(sum >= 0){
             sum+=num%10;
             sum+=num/10;
             if(String.valueOf(sum).length()==1){
