@@ -18,16 +18,13 @@ public class leetcode_209 {
                 if(left_sum < target && right_sum < target){
                     return 0;
                 }
-
                 if(left_sum < target && right_sum > target){
                     s = mid;
                 }else{
                     e = mid;
                 }
             }
-
         }
-
         return e - s;
     }
     static int sum(int s , int e, int[] arr){

@@ -1,18 +1,18 @@
 public class lenOfLastWord {
     public static void main(String[] args) {
-        String str="   fly me ";
+        String str="hello 1.6180339";
         System.out.println(len(str));
     }
     static int len(String str){
-        String s="";
-        for(int i=str.length()-1;i>=0;i--){
+        int len = 0;
+        for(int i = str.length() - 1; i >= 0; i--){
             if(str.charAt(i) != ' '){
-                s += str.charAt(i);
+                len++;
             }
-            if(str.charAt(i) == ' ' && s.length()>0){
+            if(len > 0 && str.charAt(i) == ' '){
                 break;
             }
         }
-        return s.length();
+        return len;
     }
 }
